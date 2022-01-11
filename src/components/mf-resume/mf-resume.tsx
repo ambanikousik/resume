@@ -1,4 +1,4 @@
-import { Component, h, Prop } from "@stencil/core";
+import { Component, getAssetPath, h, Prop } from "@stencil/core";
 
 @Component({
   tag: "mf-resume",
@@ -18,7 +18,7 @@ export class MfResume {
   render() {
     return (
       <article class="resume">
-        {this.showDownloadLink ? (
+        {/* {this.showDownloadLink ? (
           <div class="download-pdf screen-only">
             <a href="https://github.com/matfantinel/resume/raw/master/Matheus%20Fantinel's%20Resume.pdf">
               Download as PDF
@@ -26,17 +26,17 @@ export class MfResume {
           </div>
         ) : (
           ""
-        )}
+        )} */}
         <section class="name-and-contact">
           <div>
             {/* <mf-logotype></mf-logotype> */}
-            <h1>Matheus Fantinel</h1>
-            <h5>Web Developer</h5>
+            <h1>Rezaul Islam Kousik</h1>
+            <h5>Flutter Expert</h5>
           </div>
           <ul>
             <li class="birthday">
               <svg-icon name="birthday"></svg-icon>
-              <span>{this.calcYearsSince("1995-08-24")} years old</span>
+              <span>{this.calcYearsSince("1996-09-25")} years old</span>
             </li>
             <li class="experience">
               <svg-icon name="experience"></svg-icon>
@@ -46,16 +46,16 @@ export class MfResume {
             </li>
             <li class="location">
               <svg-icon name="location"></svg-icon>
-              <span>Caxias do Sul, RS, Brazil</span>
+              <span>Uttara, Dhaka, Bangladesh</span>
             </li>
             <li class="email">
               <svg-icon name="email"></svg-icon>
-              <a href="mailto:matt@fantinel.dev">matt@fantinel.dev</a>
+              <a href="mailto:rikousik@gmail.com">rikousik@gmail.com</a>
             </li>
             <li class="linkedin screen-only">
               <svg-icon name="linkedin"></svg-icon>
               <a
-                href="https://www.linkedin.com/in/matheus-fantinel/"
+                href="https://www.linkedin.com/in/ri-kousik-b5890698/"
                 target="_blank"
               >
                 LinkedIn Profile
@@ -63,36 +63,32 @@ export class MfResume {
             </li>
             <li class="website">
               <svg-icon name="website"></svg-icon>
-              <a href="https://fantinel.dev" target="_blank">
-                fantinel.dev
+              <a href="https://squadhead.com" target="_blank">
+                squadhead.com
               </a>
             </li>
             <li class="github screen-only">
               <svg-icon name="github"></svg-icon>
-              <a href="https://github.com/matfantinel" target="_blank">
+              <a href="https://github.com/ambanikousik" target="_blank">
                 GitHub Profile
               </a>
             </li>
             <li class="languages">
               <svg-icon name="languages"></svg-icon>
-              <span>English, Portuguese</span>
+              <span>English, Bangla</span>
             </li>
           </ul>
         </section>
         <section class="photo">
+          x
           <img
             class="avatar"
-            src="https://www.gravatar.com/avatar/d3e0755978911619f8979bef9d843b44?s=250&d=mm&r=x"
-          />
+            src={getAssetPath(`./assets/photo.jpeg`)} />
         </section>
         <section class="about">
           <p class="section-title">About</p>
           <p>
-            I have a passion for building fast, responsive and pretty UIs,
-            bringing great designs to reality and improving them as they get
-            built. I love learning new things and applying them in practical
-            solutions, either improving existing services or building completely
-            new ones.
+            I have always been a creator and builder. As a child, I would often make various interesting tools out of spare parts from my broken toys. All of my childhood adventures became more interesting as I got my first computer (a pentium II). As I got older, I focused on the Programming. I tried every form of coding I could get me hands on, till I found Flutter. While at college, I dove deep into the Game dev field, then I finally moved to flutter and never looked back.
           </p>
         </section>
         <section class="work">
@@ -142,7 +138,7 @@ export class MfResume {
                 </li>
                 <li>
                   Developing an internal HelpDesk software using Artificial Intelligence to help users before they even opened the ticket;
-                </li>             
+                </li>
               </ul>
             </div>
 
@@ -175,39 +171,34 @@ export class MfResume {
           <p class="section-title">Education</p>
           <span>
             Graduated as a{" "}
-            <u>Technologist in System Analysis and Development</u> at{" "}
-            <i>Centro Universitário da Serra Gaúcha</i>, 2018.
+            <u>Computer Science Engineer</u> at{" "}
+            <i>North South University</i>, 2018.
           </span>
         </section>
         <section class="skills">
           <p class="section-title">Skills</p>
 
           <ul>
+
             <li>
               Front-end
               <div class="tags-container">
-                <span class="tag">Angular</span>
-                <span class="tag">Vue</span>
+                <span class="tag">Flutter</span>
+                <span class="tag">Svelte</span>
                 <span class="tag">TypeScript</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">UX</span>
-                <span class="tag">SASS</span>
-                <span class="tag">Ionic</span>
-                <span class="tag">Electron</span>
-                <span class="tag">PWAs</span>
+                <span class="tag">Tailwind</span>
+                <span class="tag">Wordpress</span>
               </div>
             </li>
             <li>
               Back-end
               <div class="tags-container">
-                <span class="tag secondary">C#</span>
-                <span class="tag secondary">.NET</span>
-                <span class="tag secondary">NodeJS</span>
-                <span class="tag secondary">MongoDB</span>
-                <span class="tag secondary">SQL Server</span>
-                <span class="tag secondary">LiteDB</span>
+                <span class="tag secondary">Firebase</span>
+                <span class="tag secondary">Golang</span>
+                <span class="tag secondary">Apito</span>
               </div>
             </li>
+
           </ul>
         </section>
       </article>

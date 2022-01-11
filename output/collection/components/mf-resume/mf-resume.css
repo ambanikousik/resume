@@ -112,9 +112,10 @@
 :host .resume section.photo .avatar {
   border-radius: 50%;
   border: 3px solid var(--accent-color);
-  max-width: 100%;
+  width: 150px;
   max-height: 150px;
   box-sizing: border-box;
+  object-fit: cover;
 }
 :host .resume section.about {
   grid-area: about;

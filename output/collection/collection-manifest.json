@@ -1,8 +1,9 @@
 {
   "entries": [
+    "components/icon/icon.js",
     "components/mf-resume/mf-resume.js",
-    "components/logotype/logotype.js",
-    "components/icon/icon.js"
+    "components/stencil-asset/stencil-asset.js",
+    "components/logotype/logotype.js"
   ],
   "compiler": {
     "name": "@stencil/core",

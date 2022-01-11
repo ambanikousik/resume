@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const core = require('./core-a99158e9.js');
+const core = require('./core-f98ef8ec.js');
 
 const Logotype = class {
     constructor(hostRef) {

@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './core-9d0b34d5.js';
+import { r as registerInstance, h } from './core-cd1fe455.js';
 var Logotype = /** @class */ (function () {
     function Logotype(hostRef) {
         registerInstance(this, hostRef);

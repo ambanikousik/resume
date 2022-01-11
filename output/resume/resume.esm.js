@@ -1,1 +1,1 @@
-import{p as o,b as s}from"./p-ea0312c3.js";o().then(o=>s([["p-funac1mw",[[1,"mf-logotype"]]],["p-wdshiej0",[[1,"mf-resume",{showDownloadLink:[4,"show-download-link"]}],[1,"svg-icon",{name:[1],small:[4]}]]]],o));
+import{p as s,b as o}from"./p-aba4699b.js";s().then(s=>o([["p-fyv7mssw",[[1,"mf-logotype"]]],["p-sviioeny",[[0,"stencil-asset",{image:[1]}]]],["p-ktbbbm2x",[[1,"mf-resume",{showDownloadLink:[4,"show-download-link"]}],[1,"svg-icon",{name:[1],small:[4]}]]]],s));
